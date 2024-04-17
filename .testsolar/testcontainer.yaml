@@ -1,0 +1,7 @@
+schemaVersion: 1.0
+testTool:
+  use: github.com/OpenTestSolar/testtool-python@main:pytest
+testWorkspace: /data/tests
+testSources:
+  - src: .
+    dst: /data/tests
