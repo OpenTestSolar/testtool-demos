@@ -22,6 +22,7 @@ def test_success(print_extra_msg):
     测试获取答案
     """
     print("this is print sample output")
+
     assert inc(3) == 4
 
 
