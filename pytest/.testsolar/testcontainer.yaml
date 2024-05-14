@@ -1,0 +1,7 @@
+schemaVersion: 1.0
+testTool:
+  use: github.com/OpenTestSolar/testtool-python-pytest@main:pytest
+testWorkspace: /data/tests # 指定测试执行、加载的路径，默认是“/”
+testSources:
+  - src: .
+    dst: /data/tests

@@ -1,0 +1,16 @@
+schemaVersion: 1.0
+testContainers:
+  - config: .testsolar/testcontainer.yaml # 如果不需要特别指定，可以不写
+    replicas: 2
+    resources:
+      limits:
+        cpu: "1"
+        mem: "1G"
+      requests:
+        cpu: "0.5"
+        mem: "0.5G"
+    env: # 可选
+      - name: XXX
+        value: zzz
+    testSelectors: # 可选，默认是全部测试用例
+      - tests/test_assert.py
